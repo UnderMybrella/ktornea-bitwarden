@@ -1,0 +1,48 @@
+[versions]
+# libraries
+annotations = "24.0.1"
+spiral = "aee3924b"
+kotlinx-serialization = "1.5.1"
+kotlinx-coroutines = "1.7.2"
+
+kornea-annotations = "1.4.2-alpha"
+kornea-base = "1.3.0-alpha"
+kornea-errors = "4.0.1-alpha"
+kornea-io = "5.5.1-alpha"
+kornea-img = "1.4.1-alpha"
+kornea-toolkit = "3.5.1-alpha"
+
+# plugins
+dokka = "1.8.10"
+kotlin = "1.9.0"
+changelog = "2.1.0"
+gradleIntelliJPlugin = "1.14.1"
+qodana = "0.1.13"
+kover = "0.7.1"
+
+[libraries]
+annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
+spiral-formats = { group = "info.spiralframework", name = "spiral-formats", version.ref = "spiral" }
+spiral-osl = { group = "info.spiralframework", name = "spiral-osl", version.ref = "spiral" }
+
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+kotlinx-serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+
+kornea-annotations = { group = "dev.brella", name = "kornea-annotations", version.ref = "kornea-annotations" }
+kornea-base = { group = "dev.brella", name = "kornea-base", version.ref = "kornea-base" }
+kornea-errors = { group = "dev.brella", name = "kornea-errors", version.ref = "kornea-errors" }
+kornea-io = { group = "dev.brella", name = "kornea-io", version.ref = "kornea-io" }
+kornea-img = { group = "dev.brella", name = "kornea-img", version.ref = "kornea-img" }
+kornea-toolkit = { group = "dev.brella", name = "kornea-toolkit", version.ref = "kornea-toolkit" }
+
+[plugins]
+changelog = { id = "org.jetbrains.changelog", version.ref = "changelog" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+gradleIntelliJPlugin = { id = "org.jetbrains.intellij", version.ref = "gradleIntelliJPlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-mpp = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
+qodana = { id = "org.jetbrains.qodana", version.ref = "qodana" }
